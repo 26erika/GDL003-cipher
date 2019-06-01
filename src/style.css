@@ -1,0 +1,10 @@
+body {
+background-color: rgba(216, 165, 55, 0.849);
+margin: 0;
+}
+h1 {
+    color : #2a2404;
+    font-style: italic;
+    font-size: 15 px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
