@@ -26,9 +26,31 @@ h4 {
 }
 ul {
     text-align: left;
-    border: 1px solid teal solid;
+    border: 5px teal solid;
     color : #d3bc19;
     font-style: normal;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
+}
+p {
+    text-align: left;
+    color: #19d398;
+    font-style: normal;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+textarea  {
+    text-align: justify;
+    box-sizing: border-box;
+    width: 80%;
+    border : 5px teal solid;
+    color : navy;
+    font-style: normal;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+button{
+    color : #19d398;
+    border-radius : 6px;
+    background: teal;
 }
