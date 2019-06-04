@@ -2,5 +2,6 @@
 document.getElementById("start").addEventListener("click",comenzar);
 //ejecutar funcion de comenzar//
 function comenzar(){
-    let firstpage = document.getElementById("start").style.visibility= "visible";
+    let enter = document.getElementById("start").style.visibility= "hidden";
+    document.getElementById("two").addEventListener.style.visibility="visible";
 }
