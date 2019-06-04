@@ -54,3 +54,6 @@ button{
     border-radius : 6px;
     background: teal;
 }
+#one {
+display:hidden;
+}
