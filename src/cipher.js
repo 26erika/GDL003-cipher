@@ -1,6 +1,6 @@
 window.cipher = {
   //cifrar
-  encode : function(string,encodeOffset){
-    
-  }
-};
+  encode : function(string,offset) {
+    return ;
+      }
+    };

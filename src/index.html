@@ -15,11 +15,11 @@
       <h3>¡BIENVENIDO!</h3>
       <h4>Para comenzar:</h4>
       <ul>
-        <li class = "step one">Paso 1. Presiona el boton comenzar.</li>  
-        <li class = "step two">Paso 2. Escribe el numero de posicion en el que se desplazara el texto a cifrar.</li>
-        <li class = "step three">Paso 3. Escribe el texto a cifrar en el campo texto.</li>
-        <li class = "step four">Paso 4. Presiona el boton Cifrar <em>(Aparecera cifrado en el campo inferior)</em>.</li>
-        <li class = "step five">Paso 5. Presiona el boton limpiar para comenzar de nuevo.</li>
+        <li class="step one">Paso 1. Presiona el boton comenzar.</li>  
+        <li class="step two">Paso 2. Escribe el numero de posicion en el que se desplazara el texto a cifrar.</li>
+        <li class="step three">Paso 3. Escribe el texto a cifrar en el campo texto.</li>
+        <li class="step four">Paso 4. Presiona el boton Cifrar <em>(Aparecera cifrado en el campo inferior)</em>.</li>
+        <li class="step five">Paso 5. Presiona el boton limpiar para comenzar de nuevo.</li>
       </ul>  
       <!--"boton para comenzar de pagina 1"-->
       <button id = "start">Comenzar </button>
@@ -30,15 +30,17 @@
       <p>Indica el desplazamiento del cifrado</p>
       <input id = "shift" type = "number" min = "1" max = "25" autocomplete = "off" placeholder = "Numero" required/> 
       <br><br>
+      <p id = msgencode></p>
       <!--"espacio para escribir texto a cifrar"-->
-      <textarea name = "normaltext "type = "text" autocomplete = "off" placeholder = "Introduce tu texto" required></textarea>
+      <textarea id="encodeText" name = "normaltext "type = "text" autocomplete = "off" placeholder = "Introduce tu texto" required></textarea>
       <!--"boton de cifrar"-->
-      <button id = "encode">Cifrar</button>
+      <button id = "cipher">Cifrar</button>
       <br><br>
+      <p id = msgdecode></p>
       <!--"espacio de texto cifrado"-->
-      <textarea name = "ciphertext" type = "text"></textarea>
+      <textarea id = "decodeText" name = "ciphertext" type = "text"></textarea>
       <!--"boton de descifrar"-->
-      <button id = "decode">Descifrar</button>
+      <button id = "descipher">Descifrar</button>
       <br>
       <!--"boton de limpiar"-->
       <button id = "clean">Limpiar</button>
