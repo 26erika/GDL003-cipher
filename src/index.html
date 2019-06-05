@@ -28,17 +28,17 @@
     <div id = "two">
       <!--"espacio para indicar cuanto cifrar"-->
       <p>Indica el desplazamiento del cifrado</p>
-      <input id = "shift" type = "number" autocomplete = "off" placeholder = "Numero" required/> 
+      <input id = "shift" type = "number" min = "1" max = "25" autocomplete = "off" placeholder = "Numero" required/> 
       <br><br>
       <!--"espacio para escribir texto a cifrar"-->
       <textarea name = "normaltext "type = "text" autocomplete = "off" placeholder = "Introduce tu texto" required></textarea>
       <!--"boton de cifrar"-->
-      <button id = "cipher">Cifrar</button>
+      <button id = "encode">Cifrar</button>
       <br><br>
       <!--"espacio de texto cifrado"-->
       <textarea name = "ciphertext" type = "text"></textarea>
       <!--"boton de descifrar"-->
-      <button id = "descipher">Descifrar</button>
+      <button id = "decode">Descifrar</button>
       <br>
       <!--"boton de limpiar"-->
       <button id = "clean">Limpiar</button>
