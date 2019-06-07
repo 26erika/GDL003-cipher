@@ -9,25 +9,25 @@ function comenzar(){
     document.getElementById("one").style.display= "none";
     document.getElementById("two").style.visibility="visible";
 };
-//llamando boton cifrar
-document.getElementById("cipher").addEventListener("click", encode);
+
 //funcion de aparecer en ambos textos
 function encode(){
-//hacer que aparezca texto en ambas cajas
+//hacer que aparezca texto en ambas cajas pero solo inferior la traduce a mayusculas
     const encodeT = document.getElementById("encodeText").value;
-    document.getElementById("decodeText").value = encodeT;
+    document.getElementById("decodeText").value = encodeT.toUpperCase();
+    
+encodeT.innerHTML=window.cipher.encode();
+    
+  
 }; 
 
+//llamando boton cifrar
+document.getElementById("cipher").addEventListener("click", encode);
 
-
-
-
-
-
-
-
-
-
+ /*//definir string y offset    
+    let displacement=document.getElementById("shift").value;
+    let message =document.getElementById("encodeText").value;*/
+/*console.log(decodeText());*/
 
 
 
