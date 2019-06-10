@@ -1,8 +1,8 @@
 body {
-background-color:#3f4854 ;
-margin: 1;
-height: 100%;
-width: 100%;
+    background-color:#3f4854 ;
+    margin: 1;
+    height: 100%;
+    width: 100%;
 }
 h1 { 
     text-align: center;
@@ -41,7 +41,7 @@ ul {
 p {
     text-align: left;
     text-shadow: 1px 1px 1px black;
-    color: #b3c886;
+    color : #d5f098;
     font-style: normal;
     font-size: 25px;
     font-family: 'Fredericka the Great', cursive;
@@ -52,7 +52,7 @@ textarea  {
     width: 70%;
     height: 35%;
     border : 5px teal solid;
-    color : #8c9db4;
+    color : #3f4854;
     font-style: normal;
     font-size: 25px;
     font-family: 'Just Another Hand', cursive;
