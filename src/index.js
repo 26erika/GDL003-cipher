@@ -12,7 +12,7 @@ function comenzar(){
 
 //funcion de aparecer en ambos textos
 function encode(){
-//hacer que aparezca texto en ambas cajas pero solo inferior la traduce a mayusculas
+//hacer que aparezca texto en ambas cajas ambas las traduce a mayusculas
     const encodeT = document.getElementById("encodeText").value;
     document.getElementById("decodeText").value = encodeT.toUpperCase();
     
