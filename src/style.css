@@ -46,6 +46,14 @@ p {
     font-size: 25px;
     font-family: 'Fredericka the Great', cursive;
 }
+input {
+    color : #8c9db4;
+    border-radius : 6px;
+    background: teal;
+    width: 15%;
+    height: 10%;
+    font-size: 150%;
+}
 textarea  {
     text-align: justify;
     box-sizing: border-box;

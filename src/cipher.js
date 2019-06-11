@@ -1,42 +1,82 @@
 window.cipher = {
   //cifrar
-  encode: function () {
-    //variables de cadena y desplazamiento  
-    let string = document.getElementById("encodeText").value.toUpperCase();
-    document.getElementById("encodeText").value = "";
-    let offset = document.getElementById("shift").value;
-    
-    //cuenta la longitud de la cadena 
-    let size = string.length;
-    let lastPosition = size;
+  encode: (string,offset) => {
 
     let stringEncode = "";
 
-    
-    for (let i = 0; i < lastPosition; i++) {
+
+    for (let i = 0; i < string.length; i++) {
       //busca el caracter en el codigo ascii        
       string.charCodeAt([i]);
       console.log(string.charCodeAt([i]));
-      //caracteres en mayusculas--(x-65+n)%26+65
       
+      //caracteres en mayusculas--(x-65+n)%26+65
       if (string.charCodeAt(i) >= 65 && string.charCodeAt(i) <= 90) {
         
         let textChar = (string.charCodeAt(i) - 65 + parseInt(offset)) % 26 + 65;
         stringEncode += String.fromCharCode(textChar);
-        /*//caracteres en minusculas--(x-65+n)%26+65         
-                     }else if (string.charCodeAt(i) >= 97 && string.charCodeAt(i) <= 122){
-                          textChar =(string.charCodeAt(i) - 97 + parseInt(offset)) % 26 + 97;
-                          string += String.fromCharCode(textChar);*/
+       
       }
-      //hacer que aparesca en la caja inferior?????    
+      //caracteres en minusculas--(x-65+n)%26+65         
+      if (string.charCodeAt(i) >= 97 && string.charCodeAt(i) <= 122){
+
+        let textCharMin =(string.charCodeAt(i) - 97 + parseInt(offset)) % 26 + 97;
+        stringEncode += String.fromCharCode(textCharMin); 
+        
+      //caracteres en numeros--(x-65+n)%26+65 
+
+      if (string.charCodeAt(i) >= 48 && string.charCodeAt(i) <= 57){
+
+        let numChar =(string.charCodeAt(i) - 48 + parseInt(offset)) % 26 + 48;
+        stringEncode += String.fromCharCode(numChar);   
+
       //cuenta los caracteres ingresados
       console.log(stringEncode);
       console.log(offset);
-
-
+      }
     }
-
-    return stringEncode;
+   }
+    return stringEncode.toUpperCase();
   },
+
+
+decode: (string,offset) => {
+
+  let stringDecode = "";
+
+
+  for (let i = 0; i < string.length; i++) {
+    //busca el caracter en el codigo ascii        
+    string.charCodeAt([i]);
+    console.log(string.charCodeAt([i]));
+   
+    //caracteres en mayusculas--(x-65+n)%26+65
+    if (string.charCodeAt(i) >= 65 && string.charCodeAt(i) <= 90) {
+      
+      let textCharE = (string.charCodeAt(i) + 65 - parseInt(offset)) % 26 + 65;
+      stringDecode += String.fromCharCode(textCharE);
+     
+    }
+    //caracteres en minusculas--(x-65+n)%26+65         
+    if (string.charCodeAt(i) >= 97 && string.charCodeAt(i) <= 122){
+
+      let textCharMinE =(string.charCodeAt(i) + 97 - parseInt(offset)) % 26 + 97;
+      stringDecode += String.fromCharCode(textCharMinE); 
+      
+    //caracteres en numeros--(x-65+n)%26+65 
+
+    if (string.charCodeAt(i) >= 48 && string.charCodeAt(i) <= 57){
+
+      let numCharE =(string.charCodeAt(i) + 48 - parseInt(offset)) % 26 + 48;
+      stringDecode += String.fromCharCode(numCharE);   
+
+    //cuenta los caracteres ingresados
+    console.log(stringDecode);
+    console.log(offset);
+    }
+  }
+ }
+  return stringDecode;
+},
 
 };

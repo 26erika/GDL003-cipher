@@ -30,21 +30,19 @@
       <!--"espacio para indicar cuanto cifrar"-->
       <p>Indica el desplazamiento del cifrado</p>
       <input id = "shift" type = "number" autocomplete = "off" placeholder = "Numero" required/> 
-      <br>
+      <!--"boton de cifrar"-->
+      <button id = "cipher">Cifrar</button>
+      <!--"boton de descifrar"-->
+      <button id = "descipher">Descifrar</button>
+      <!--"boton de limpiar"-->
+      <button onclick = "location.reload()" class ="btn_reload">Limpiar</button>
       <p>Introduce tu mensaje que deseas cifrar</p>
       <!--"espacio para escribir texto a cifrar"-->
       <textarea id = "encodeText" name = "normaltext" type = "text" ></textarea>
-      <!--"boton de cifrar"-->
-      <button id = "cipher">Cifrar</button>
       <br>
       <p>Este es tu mensaje cifrado</p>
       <!--"espacio de texto cifrado"-->
       <textarea id = "decodeText" name = "ciphertext" type = "text"></textarea>
-      <!--"boton de descifrar"-->
-      <button id = "descipher">Descifrar</button>
-      <br>
-      <!--"boton de limpiar"-->
-      <button onclick = "location.reload()" class ="btn_reload">Limpiar</button>
     </div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
