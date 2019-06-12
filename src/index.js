@@ -18,7 +18,7 @@ const encode=()=>{
 let string = document.getElementById("encodeText").value;
 document.getElementById("encodeText").value = "";
 let offset = document.getElementById("shift").value;
-    document.getElementById("decodeText").value = window.cipher.encode(string,offset);
+    document.getElementById("decodeText").value = window.cipher.encode(offset,string);
      //console.log(window.cipher.encode())
 
 };
@@ -34,7 +34,7 @@ const decode=()=>{
     let string = document.getElementById("encodeText").value.toUpperCase();
     document.getElementById("encodeText").value = "";
     let offset = document.getElementById("shift").value;
-        document.getElementById("decodeText").value = window.cipher.decode(string,offset);
+        document.getElementById("decodeText").value = window.cipher.decode(offset,string);
          //console.log(window.cipher.encode())
     
     };

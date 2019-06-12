@@ -18,9 +18,10 @@
       <ul>
         <li class="step one">Paso 1. Presiona el boton comenzar.</li>  
         <li class="step two">Paso 2. Escribe el numero de posicion en el que se desplazara el texto a cifrar.</li>
-        <li class="step three">Paso 3. Escribe el texto a cifrar en el campo texto.</li>
-        <li class="step four">Paso 4. Presiona el boton Cifrar <em>(Aparecera cifrado en el campo inferior)</em>.</li>
-        <li class="step five">Paso 5. Presiona el boton limpiar para comenzar de nuevo.</li>
+        <li class="step three">Paso 3. Escribe el texto a cifrar o descifrar en el campo superior.</li>
+        <li class="step four">Paso 4. Presiona el boton Cifrar para cifrar tu mensaje<em>(Aparecera cifrado en el campo inferior)</em>.</li>
+        <li class="step five">Paso 5. Presiona el boton Descifrar para descifrar tu mensaje<em>(Aparecera descifrado en el campo inferior)</em>.</li>
+        <li class="step six">Paso 6. Presiona el boton limpiar para comenzar de nuevo.</li>
       </ul>  
       <!--"boton para comenzar de pagina 1"-->
       <button id = "start">Comenzar </button>
@@ -28,7 +29,7 @@
       <!--"pagina 2"-->
     <div id = "two">
       <!--"espacio para indicar cuanto cifrar"-->
-      <p>Indica el desplazamiento del cifrado</p>
+      <p>Indica el desplazamiento del cifrado del 0 al 90</p>
       <input id = "shift" type = "number" autocomplete = "off" placeholder = "Numero" required/> 
       <!--"boton de cifrar"-->
       <button id = "cipher">Cifrar</button>
@@ -36,11 +37,11 @@
       <button id = "descipher">Descifrar</button>
       <!--"boton de limpiar"-->
       <button onclick = "location.reload()" class ="btn_reload">Limpiar</button>
-      <p>Introduce tu mensaje que deseas cifrar</p>
+      <p>Introduce tu mensaje que deseas cifrar o descifrar</p>
       <!--"espacio para escribir texto a cifrar"-->
       <textarea id = "encodeText" name = "normaltext" type = "text" ></textarea>
       <br>
-      <p>Este es tu mensaje cifrado</p>
+      <p>Este es tu mensaje cifrado o descifrado</p>
       <!--"espacio de texto cifrado"-->
       <textarea id = "decodeText" name = "ciphertext" type = "text"></textarea>
     </div>

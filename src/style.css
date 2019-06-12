@@ -32,7 +32,7 @@ ul {
     text-align: left;
     border: 5px teal solid;
     width: 95%;
-    height: 35%;
+    height: 40%;
     color : #d5f098;
     font-style: normal;
     font-size: 40px;
@@ -45,6 +45,7 @@ p {
     font-style: normal;
     font-size: 25px;
     font-family: 'Fredericka the Great', cursive;
+    margin-right: 2%;
 }
 input {
     color : #8c9db4;
@@ -53,6 +54,7 @@ input {
     width: 15%;
     height: 10%;
     font-size: 150%;
+    margin-right: 2%;
 }
 textarea  {
     text-align: justify;
@@ -64,6 +66,7 @@ textarea  {
     font-style: normal;
     font-size: 25px;
     font-family: 'Just Another Hand', cursive;
+    margin-right: 2%;
 }
 button{
     color : #8c9db4;
@@ -72,4 +75,5 @@ button{
     width: 15%;
     height: 10%;
     font-size: 150%;
+    margin-right: 2%;
 }
