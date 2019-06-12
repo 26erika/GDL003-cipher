@@ -31,7 +31,7 @@ document.getElementById("cipher").addEventListener("click", encode);
 const decode=()=>{
     
     //variables de cadena y desplazamiento  
-    let string = document.getElementById("encodeText").value.toUpperCase();
+    let string = document.getElementById("encodeText").value;
     document.getElementById("encodeText").value = "";
     let offset = document.getElementById("shift").value;
         document.getElementById("decodeText").value = window.cipher.decode(offset,string);
