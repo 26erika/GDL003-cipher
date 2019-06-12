@@ -1,30 +1,34 @@
-# Cifrado César
+![caeser-cipher](https://i.ibb.co/646gBJf/titulo2.png)
+# ¿Que es el cifrado Cesar? #
+>El cifrado cesar es un metodo para mandar mensajes **cifrados** en el cual introduces un texto a cifrar y seleccionas el desplazamiento y obtendras un mensaje cifrado.
 
-Cifrar significa codificar. El [cifrado César](https://en.wikipedia.org/wiki/Caesar_cipher)
-es uno de los primeros métodos de cifrado conocidos. El emperador romano Julio
-César lo usaba para enviar órdenes secretas a sus generales en los campos de
-batalla.
+# ¿A quien esta dirigido?
+Esta dirigido a cualquier tipo de usuario
 
-![caeser-cipher](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Caesar3.svg/2000px-Caesar3.svg.png)
+Ya que podria usarse desde manera individual:
 
-El cifrado césar es una de las técnicas más simples para cifrar un mensaje. Es
-un tipo de cifrado por sustitución, es decir que cada letra del texto original
-es reemplazada por otra que se encuentra un número fijo de posiciones
-(desplazamiento) más adelante en el mismo alfabeto.
+* Como una bitacora.
+* Para guardar investigaciones. 
+* Formulas.
+* Chats. 
+* Diarios privados.
+* Etc.
 
-Por ejemplo, si usamos un desplazamiento (_offset_) de 3 posiciones:
+ O tambien lo podrian usar desde empresas para mandarse informacion:
 
-* La letra A se cifra como D.
-* La palabra CASA se cifra como FDVD.
-* Alfabeto sin cifrar: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
-* Alfabeto cifrado: D E F G H I J K L M N O P Q R S T U V W X Y Z A B C
+ * Por correo.
+ * Chats.  
+ * Mensajes. 
+ # ¿Como se usa?
+ ### Paso N°1.
+ Para comenzar tendrias que leer las indicaciones de uso de la primera pagina y presionar el boton de comenzar.
 
-En la actualidad, todos los cifrados de sustitución simple se descifran con
-mucha facilidad y, aunque en la práctica no ofrecen mucha seguridad en la
-comunicación por sí mismos; el cifrado César sí puede formar parte de sistemas
-más complejos de codificación, como el cifrado Vigenère, e incluso tiene
-aplicación en el sistema ROT13.
-
+![pagina-uno](https://i.ibb.co/tHSY4pb/Captura-de-pantalla-de-2019-06-12-16-42-15.png)
+### Paso N°2.
+Elige el desplazamiento
+![desplazamiento](https://i.ibb.co/rymhcW6/indica-el-desplazamiento.png)
+### Paso N°3.
+Escribe tu texto 
 ## Resumen del proyecto
 
 ¿Qué tengo que hacer exactamente? En este proyecto crearás la primera aplicación
