@@ -39,7 +39,7 @@ const decode=()=>{
     
     };
     
-    //llamando boton cifrar
+    //llamando boton descifrar
     document.getElementById("descipher").addEventListener("click", decode);
 
 
