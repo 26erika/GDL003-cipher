@@ -1,51 +1,58 @@
-<!DOCTYPE >
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Caesar Cipher</title>
+  <nav>
     <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Just+Another+Hand|Pacifico&display=swap" rel="stylesheet"> 
-  </head>
-  <body>
-      <!--"pagina 1"-->
-    <div id="root">
-      <h1>Cifrado Cesar</h1>
-    </div>
-    <div id ="one"> 
-      <!--"texto de pasos a seguir"-->
-      <h3>¡BIENVENIDO!</h3>
-      <h4>Para comenzar:</h4>
-      <ul>
-        <li class="step one">Paso 1. Presiona el boton comenzar.</li>  
-        <li class="step two">Paso 2. Escribe el numero de posicion en el que se desplazara el texto a cifrar.</li>
-        <li class="step three">Paso 3. Escribe el texto a cifrar o descifrar en el campo superior.</li>
-        <li class="step four">Paso 4. Presiona el boton Cifrar para cifrar tu mensaje<em>(Aparecera cifrado en el campo inferior)</em>.</li>
-        <li class="step five">Paso 5. Presiona el boton Descifrar para descifrar tu mensaje<em>(Aparecera descifrado en el campo inferior)</em>.</li>
-        <li class="step six">Paso 6. Presiona el boton limpiar para comenzar de nuevo.</li>
-      </ul>  
-      <!--"boton para comenzar de pagina 1"-->
-      <button id = "start">Comenzar </button>
-    </div>
-      <!--"pagina 2"-->
-    <div id = "two">
-      <!--"espacio para indicar cuanto cifrar"-->
-      <p>Indica el desplazamiento del cifrado </p>
-      <input id = "shift" type = "number" autocomplete = "off" placeholder = "Numero" required/> 
-      <!--"boton de cifrar"-->
-      <button id = "cipher">Cifrar</button>
-      <!--"boton de descifrar"-->
-      <button id = "descipher">Descifrar</button>
-      <!--"boton de limpiar"-->
-      <button onclick = "location.reload()" class ="btn_reload">Limpiar</button>
-      <p>Introduce tu mensaje que deseas cifrar o descifrar</p>
-      <!--"espacio para escribir texto a cifrar"-->
-      <textarea id = "encodeText" name = "normaltext" type = "text" ></textarea>
-      <br>
-      <p>Este es tu mensaje cifrado o descifrado</p>
-      <!--"espacio de texto cifrado"-->
-      <textarea id = "decodeText" name = "ciphertext" type = "text"></textarea>
-    </div>
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
-  </body>
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Just+Another+Hand|Pacifico&display=swap"
+      rel="stylesheet">
+  </nav>
+</head>
+
+<body>
+  <!--"pagina 1"-->
+  <header id="root">
+    <h1>Cifrado Cesar</h1>
+  </header>
+  <main id="instructionPage">
+    <!--"texto de pasos a seguir"-->
+    <h3>¡BIENVENIDO!</h3>
+    <h4>Para comenzar:</h4>
+    <ul>
+      <li>Paso 1. Presiona el boton comenzar.</li>
+      <li>Paso 2. Escribe el numero de posicion en el que se desplazara el texto a cifrar.</li>
+      <li>Paso 3. Escribe el texto a cifrar o descifrar en el campo superior.</li>
+      <li>Paso 4. Presiona el boton Cifrar para cifrar tu mensaje<em>(Aparecera cifrado en el campo
+          inferior)</em>.</li>
+      <li>Paso 5. Presiona el boton Descifrar para descifrar tu mensaje<em>(Aparecera descifrado en el
+          campo inferior)</em>.</li>
+      <li>Paso 6. Presiona el boton limpiar para comenzar de nuevo.</li>
+    </ul>
+    <!--"boton para comenzar de pagina 1"-->
+    <button id="start">Comenzar </button>
+  </main>
+  <!--"pagina 2"-->
+  <section id="pageToStart">
+    <!--"espacio para indicar cuanto cifrar"-->
+    <p>Indica el desplazamiento del cifrado </p>
+    <input id="shift" type="number" autocomplete="off" placeholder="Numero" required />
+    <!--"boton de cifrar"-->
+    <button id="cipher">Cifrar</button>
+    <!--"boton de descifrar"-->
+    <button id="descipher">Descifrar</button>
+    <!--"boton de limpiar"-->
+    <button id="clean">Limpiar</button>
+    <p>Introduce tu mensaje que deseas cifrar o descifrar</p>
+    <!--"espacio para escribir texto a cifrar"-->
+    <textarea id="encodeText" name="normaltext"></textarea>
+    <p>Este es tu mensaje cifrado o descifrado</p>
+    <!--"espacio de texto cifrado"-->
+    <textarea id="decodeText" name="ciphertext"></textarea>
+  </section>
+  <script src="cipher.js"></script>
+  <script src="index.js"></script>
+</body>
+
 </html>
